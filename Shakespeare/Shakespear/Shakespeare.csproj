@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CDD084E8-88EB-4BFD-9D30-209404CD1CEC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shakespear</RootNamespace>
+    <AssemblyName>Shakespear</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dictionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dictionary.Designer.cs">
+      <DependentUpon>Dictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro.Designer.cs">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Random.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Random.Designer.cs">
+      <DependentUpon>Random.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dictionary.resx">
+      <DependentUpon>Dictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro.resx">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Random.resx">
+      <DependentUpon>Random.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dic1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dic1 copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dic2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dizionario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dic3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-2-scroll-png-clipart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\677676.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\143568158.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transparent-scroll-border-clip-art-Black_scroll_with_transparent_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\77776666.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shakespeare 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\article-1160423-0275F5820000044D-397_468x428.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5057e9fcf138ebc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creative_scroll_paper_background_vector_set_544278.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\580b585b2edbce24c47b2463.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-2-scroll-png-clipart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-2-scroll-png-clipart2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creative_scroll_paper_background_vector_set_5442781.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\580b585b2edbce24c47b24631.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capturereererre.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-book-transparent-background-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1435681581.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\is_this_an_emojiiseebeforemetwitterplaysitspartinshakespeare4009.thumb.1280.1280.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
